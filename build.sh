@@ -12,5 +12,6 @@ if [ -e ./LaTeX/Proposal.pdf ]
     mv ./LaTeX/Proposal.pdf .
     echo "Build complete"
 else
-    echo "[Error]: Error executing pdflatex ($ret)"
+    echo "[Error]: Error executing pdflatex:"
+    echo "$ret"
 fi
