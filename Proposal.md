@@ -2,6 +2,8 @@
 
 ##Author: Joe Gibson, July 2015
 
+###Comments and Review by Jesse Millwood and Kurt VonEhr
+
 ##Introduction
 This document describes proposed changes to the Computer Engineering undergraduate program at Grand Valley State University. These changes are suggested based on suggestions drawn from the inferences and experiences of a recent graduate of the program.
 
