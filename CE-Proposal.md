@@ -161,9 +161,15 @@ Additionally, EGR 326 does scratch the surface of *theoretical* board layout, sp
 
 > **Side note**: Perhaps it makes sense to use an Arduino for EGR 226 and then graduate to their own development board in EGR 326, but in any case it is extremely important to have a practical experience with board design and digital systems.
 
-In addition, there exists an opportunity for students to interact with full-featured, open source software, and for partnerships to be made with alternative board manufacturers.
+These finished boards do much more than simply serve as a development board for them in future courses; the board will be a source of pride and individuality for students, who may even become excited about board design and find that they quite enjoy it.
+
+**Even more paramount is the ability for students to showcase their board during interviews.** They will have at least one board (possibly a second revision) to physically hand prospective employers, while they explain the steps they took to design and enhance the board, and could even show the documentation they have prepared surrounding the board, such as schematics and calculations. This gives students an opportunity to empirically show that they can design a printed circuit board, and indeed a complete embedded system, to a specification and that they have improved upon it with documentation and critical thinking.
+
+In addition to the hardware aspect, there exists an opportunity for students to interact with full-featured, open source software, and for partnerships to be made with alternative board manufacturers.
 
 The fully open-source schematic and PCB design tool KiCad [(www.kicad-pcb.org)](www.kicad-pcb.org) is produced by a collaboration at CERN (the European Center for Nuclear Research), and is constantly undergoing bug fixes and feature enhancements. The software is fully cross-platform, with builds for OS X, Windows, and Linux. There are nightly builds and ongoing development on the tool, which is used around the globe due to it's 100% free open source commitment; widely available documentation and support community; and features like push-and-shove routing, which are traditionally found on only extremely expensive industry tools.
+
+> **Side note**: KiCad is due for an official 'stable' release within the next couple of months. The current builds are 'stable' in the sense that they function well, but an official stable build is coming soon.
 
 OSH Park [(www.oshpark.com)](www.oshpark.com) is a community PCB manufacturing platform. They are based in the US (in Oregon) and offer both 2-layer and 4-layer boards for incredible prices. They charge just **$5 per square inch** for 2-layer boards, and they are guaranteed to arrive within two weeks. In addition, the price always includes **three** copies of the board, not one. We have used OSH Park for many of our projects and have had very good service, including being upgraded to a much faster turnaround time and shipping due to being repeat customers.
 
@@ -243,9 +249,11 @@ Not only that, but version control offers incalculable benefits to **students**:
 
 All of these benefits of version control systems, and more specifically of `git`, one of the most popular and easiest to use, make it an absolutely **essential** aspect of a modern computer science or computer engineering degree. I truly cannot imagine working on a team or any sort of coding project now without `git`, and my `GitHub` account link is the only other hyperlink on my resume other than my own personal website. `git` and `GitHub`, along with any version control system, are so prolific and unavoidable in today's software world that they simply **must** be a part of any engineering student's education.
 
-Version control systems are a perfect fit for courses like CIS 350 - Software Engineering, if tought properly. The only trouble with `git` (and any version control software) is that if learned incorrectly, or not learned thouroughly enough, students can make mistakes that affect their entire project team. With version control, however, these mistakes are easily recovered from, and the entire history of their project is backed up in well-defined stages.
+Version control systems are a perfect fit for courses like CIS 350 - Software Engineering, if taught properly. The only trouble with `git` (and any version control software) is that if learned incorrectly, or not learned thouroughly enough, students can make mistakes that affect their entire project team. With version control, however, these mistakes are easily recovered from, and the entire history of their project is backed up in well-defined stages.
 
-I propose that instructors in CS and CE courses actively promote using `git` and using version control schemes such as [this](http://nvie.com/posts/a-successful-git-branching-model/) incredibly powerful and easy to use branching model. (http://nvie.com/posts/a-successful-git-branching-model/). This will benefit both students and instructors and will result in every student who graduates from GVSU having their own personal portfolio of the code they have written readily available to show off to their potential employers.
+It is not only for the benefit of students that they use version control systems; professors will also benefit greatly. Instead of a chaotic mess of emails with 40 files named `helloworld.c (37)` in their downloads folder, professors can simply receive a link to a student's repository. Even submitting their code can become an easy process. If students take advantage of `git` and `GitHub`'s very simple release functionality, submitting an assignment can be as simple as
+
+I propose that instructors in CS and CE courses actively promote using `git` and using version control schemes such as [this](http://nvie.com/posts/a-successful-git-branching-model/) incredibly powerful and easy to use branching model. (http://nvie.com/posts/a-successful-git-branching-model/). In the end, using `git` will benefit both students and instructors and will result in every student who graduates from GVSU having their own personal portfolio of the code they have written readily available to show off to their potential employers.
 
 ##Curriculum Suggestions
 While I am aware that any suggested change to a curriculum is not so easily implemented that the school can simply add or remove courses at will, the curriculum suggested is my view of what I believe to be a generally improved curriculum for Computer Engineering students, given my experience with the existing curriculum, the needs of co-op employers, and the insight young engineering students have in new topics and fields, having grown up in the era of massive technological changes in the field of computer engineering.
@@ -312,5 +320,15 @@ Note that the only courses included are those discussed in this proposal, and no
 5. CIS 461 - Compiler Design and Construction
 6. EGR 436 - Embedded Systems Interface
 
+###Request for Response
+Politely ask for a response and give email.
+
 ###Possible New Elective(s)
 1. FPGA Security - Implementing/analyzing encryption algorithms on FPGAs in VHDL or Verilog (Dr. Parikh?)
+
+##Contributions
+Thank you to the following students for their ideas and feedback on this document:
+1. Jesse Millwood
+2. Kurt VonEhr
+
+A special thanks to Jesse for his work on the LaTeX template that makes this document look so professional.
