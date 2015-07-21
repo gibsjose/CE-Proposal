@@ -3,7 +3,7 @@
 ##Description
 This document is a place to write down any notes regarding changes or additions to the proposal including content changes/additions and grammatical errors.
 
-Add a new item by just creating a new bulletpoint with:
+Add a new item by just creating a new bullet-point with:
 ```markdown
 * Great idea here
 ```
@@ -12,6 +12,7 @@ And check off a completed item with a ~~strikethrough~~:
 ```markdown
 * ~~Great idea here~~
 ```
+And move it to the `Completed` section.
 
 ##Notes
 * Administrative rules regarding the way professors release content: Using PDFs rather than Word Documents, across the board
