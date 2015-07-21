@@ -111,7 +111,7 @@ Returning to the benefits of C++ as an educational tool for OOP, C++ offers more
 
 All of these attributes make C++ a more logical progression for the foundational OOP Computer Engineering course(s) than using Java.
 
-C++ is also more widely used than Java in the field of computer **engineering**. I will not attempt an argument at programming language popularity in general (see statistics at (http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html), but clearly Java's use in Android development is a vast porportion of it's popularity, and it is clear that C and C++ are the most widely used languages in computer engineering. In my personal experience, through all three of my co-ops I used C once on a piece of avionics sofware, and C++ on both of the other two: once on a sub-orbital balloon satellite at NASA and again on a large particle physics project at CERN. At both NASA and CERN, C++ was by far the most prevalent language used by the engineers outside of web developers.
+C++ is also more widely used than Java in the field of computer **engineering**. I will not attempt an argument at programming language popularity in general (see statistics at (http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html), but clearly Java's use in Android development is a vast porportion of it's popularity, and it is clear that C and C++ are the most widely used languages in computer engineering. In my personal experience, through all three of my co-ops I used C once on a piece of avionics software, and C++ on both of the other two: once on a sub-orbital balloon satellite at NASA and again on a large particle physics project at CERN. At both NASA and CERN, C++ was by far the most prevalent language used by the engineers outside of web developers.
 
 ####System Programming
 CIS 361 is split into two distinct halves:
@@ -251,16 +251,20 @@ Not only that, but version control offers incalculable benefits to **students**:
 
 All of these benefits of version control systems, and more specifically of `git`, one of the most popular and easiest to use, make it an absolutely **essential** aspect of a modern computer science or computer engineering degree. I truly cannot imagine working on a team or any sort of coding project now without `git`, and my `GitHub` account link is the only other hyperlink on my resume other than my own personal website. `git` and `GitHub`, along with any version control system, are so prolific and unavoidable in today's software world that they simply **must** be a part of any engineering student's education.
 
-Version control systems are a perfect fit for courses like CIS 350 - Software Engineering, if taught properly. The only trouble with `git` (and any version control software) is that if learned incorrectly, or not learned thouroughly enough, students can make mistakes that affect their entire project team. With version control, however, these mistakes are easily recovered from, and the entire history of their project is backed up in well-defined stages.
+Version control systems are a perfect fit for courses like CIS 350 - Software Engineering, if taught properly. The only trouble with `git` (and any version control software) is that if learned incorrectly, or not learned thoroughly enough, students can make mistakes that affect their entire project team. With version control, however, these mistakes are easily recovered from, and the entire history of their project is backed up in well-defined stages.
 
-It is not only for the benefit of students that they use version control systems; professors will also benefit greatly. Instead of a chaotic mess of emails with 40 files named `helloworld.c (37)` in their downloads folder, professors can simply receive a link to a student's repository. Even submitting their code can become an easy process. If students take advantage of `git` and `GitHub`'s very simple release functionality, submitting an assignment can be as simple as
+`git` is easy to learn and has a **ton** of wonderful documentation behind it (check out https://help.github.com/). [This](https://try.github.io/levels/1/challenges/1) interactive website (https://try.github.io/levels/1/challenges/1) is a fantastic example of how easy it is to get started using `git`.
+
+It is not only for the benefit of students that they use version control systems; professors will also benefit greatly. Instead of a chaotic mess of emails with 40 files named `helloworld.c` in their downloads folder, professors can simply receive a link to a student's repository. Even submitting their code can become an easy process. If students take advantage of `git` and `GitHub`'s very simple release functionality, submitting an assignment can be as simple as running `git tag -a "gibson-v1.0"`, which automatically creates a zip folder of the student's project that they can download and submit. For group projects, professors can even see detailed statistics and graphs of who is contributing what to any given project, if they so choose to do so. To avoid plagiarism between students in classes, projects could be hosted on other sites such as Gitlab (www.gitlab.com) or Bitbucket (www.bitbucket.org), both of which offer free private repositories.
 
 I propose that instructors in CS and CE courses actively promote using `git` and using version control schemes such as [this](http://nvie.com/posts/a-successful-git-branching-model/) incredibly powerful and easy to use branching model. (http://nvie.com/posts/a-successful-git-branching-model/). In the end, using `git` will benefit both students and instructors and will result in every student who graduates from GVSU having their own personal portfolio of the code they have written readily available to show off to their potential employers.
+
+> **Side note**: Everyone has their own favorite version control system, and while `git` is certainly one of the more popular options, others great options do exist. However, to keep things consistent, a single option should be chosen. `git` is a perfect choice for this scenario, because it is open source, distributed, very easy to learn, has a mountain of great documentation behind it, and is exclusively used by the most popular public repository site, GitHub.
 
 ##Curriculum Suggestions
 While I am aware that any suggested change to a curriculum is not so easily implemented that the school can simply add or remove courses at will, the curriculum suggested is my view of what I believe to be a generally improved curriculum for Computer Engineering students, given my experience with the existing curriculum, the needs of co-op employers, and the insight young engineering students have in new topics and fields, having grown up in the era of massive technological changes in the field of computer engineering.
 
-Again, this is essentially just a very **idealistic** view of what a curriculum might look like, so it could be referenced if changed could be made.
+Again, this is essentially just a very **idealistic** view of what a curriculum might look like, so it could be referenced if changes were to be made.
 
 Note that the only courses included are those discussed in this proposal, and not any gen-ed courses or other pre-requisite engineering courses.
 
@@ -315,7 +319,7 @@ Note that the only courses included are those discussed in this proposal, and no
 1. Senior Project II
 
 ###CE Electives
-1. CIS 451 (although this is really covered quite well by EGR 226, EGR 424, and CIS 452)
+1. CIS 451 - Computer Architecture (although this is really covered quite well between EGR 226, EGR 424, and CIS 452)
 2. EGR 426 - Integrated Circuit System Design
 3. CIS 458 - System Security
 4. CIS 375 - Wireless Networking Systems
@@ -333,4 +337,4 @@ Thank you to the following students for their ideas and feedback on this documen
 1. Jesse Millwood
 2. Kurt VonEhr
 
-A special thanks to Jesse for his work on the LaTeX template that makes this document look so professional.
+A special thanks to Jesse for his contributions to the LaTeX template for this document
