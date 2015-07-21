@@ -3,7 +3,9 @@
 echo "Running pdflatex..."
 
 cd ./LaTeX/
-ret=$(pdflatex Proposal.tex)
+# run twice to produce contents and resolve figs
+ret=$(pdflatex Proposal.tex < /dev/null)
+ret=$(pdflatex Proposal.tex < /dev/null)
 cd ..
 if [ -e ./LaTeX/Proposal.pdf ]
     then
