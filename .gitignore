@@ -1,0 +1,12 @@
+
+# File Extentions
+*.log
+*.toc
+*.aux
+*.out
+*.orig
+
+# Temp Files
+*#
+*.#
+*~
