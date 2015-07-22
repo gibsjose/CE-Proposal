@@ -18,7 +18,7 @@
 \usepackage{mathtools}
 \usepackage[justification=centering]{caption}
 \usepackage{amssymb}
-\usepackage[pdftex, pdfborderstyle={/S/U/W 0}]{hyperref} % this disables the boxes around links]
+\usepackage[pdftex, colorlinks=true, urlcolor=blue, linkcolor=black, pdfborderstyle={/S/U/W 0}]{hyperref} % this disables the boxes around links]
 \usepackage{float}
 \usepackage{listings}
 % \usepackage{color}
@@ -167,7 +167,7 @@ To that end, this proposal is intended to achieve four things:
 \itemsep1pt\parskip0pt\parsep0pt
 \item To give perspective on the usefulness and practicality of the existing curriculum
 \item To critique certain aspects of the current curriculum that require review and careful attention
-\item To emphasize the importance of certain topics that are currently \textbf{not} part of the curriculum
+\item To emphasize the importance of certain topics that are currently \emph{not} part of the curriculum
 \item To suggest a possible idealistic outline of a modified curriculum to better suit the current
 environment of computer engineering, including ideas for new courses or projects
 \end{enumerate}
@@ -410,8 +410,7 @@ than C, and can even be confusing (i.e. where to place the
         declaration \textbf{was} just plain C.
 \end{enumerate}
 
-All of these attributes make C++ a more logical progression for the
-foundational OOP Computer Engineering course(s) than using Java.
+These similarities also mean that there could even be \emph{one} OOP course in C++ rather than two in Java. Most students will agree that CIS 162 is extremely easy and that any serious programmer could very easily begin at CIS 163 (Java II) without much difficulty. Using C++ will only further relax the need for two courses, since it is such a natural progression from C. If CE students take the C++ course after taking any of the C courses (EGR 261, CIS 361, or EGR 226), I believe that only one OOP course would need to be required. This frees up one required course, which could be replaced by EGR 424 or CIS 457, as will be described later.
 
 \bigskip
 
@@ -427,6 +426,11 @@ and C++ on both of the other two: once on a sub-orbital balloon
 satellite at NASA and again on a large particle physics project at CERN.
 At both NASA and CERN, C++ was by far the most prevalent language used
 by the engineers outside of web developers.
+
+\bigskip
+
+In the end, all of these attributes make C++ a more logical progression for the
+foundational OOP Computer Engineering course(s) than using Java.
 
 \subsection{System Programming}\label{system-programming}
 CIS 361 is split into two distinct halves:
@@ -618,7 +622,7 @@ partnerships to be made with alternative board manufacturers.
 \bigskip
 
 The fully open-source schematic and PCB design tool KiCad
-\href{www.kicad-pcb.org}{(www.kicad-pcb.org)} is produced by a
+\href{https://www.kicad-pcb.org}{(www.kicad-pcb.org)} is produced by a
 collaboration at CERN (the European Center for Nuclear Research), and is
 constantly undergoing bug fixes and feature enhancements. The software
 is fully cross-platform, with builds for OS X, Windows, and Linux. There
@@ -634,7 +638,7 @@ the next couple of months. The current builds are `stable' in the sense
 that they function well, but an official stable build is coming soon.
 \end{quote}
 
-OSH Park \href{www.oshpark.com}{(www.oshpark.com)} is a community PCB
+OSH Park \href{https://www.oshpark.com}{(www.oshpark.com)} is a community PCB
 manufacturing platform. They are based in the US (in Oregon) and offer
 both 2-layer and 4-layer boards for incredible prices. They charge just
 \textbf{\$5 per square inch} for 2-layer boards, and they are guaranteed
@@ -782,7 +786,7 @@ be a focus at GVSU to take advantage of an emerging field.
 
 For CS students, there is an option to take CIS 458, which gives at
 least an overview of security and modern cryptography concepts. In an
-ideal world, there would instead by two courses: Network and System
+ideal world, there would instead be two courses: Network and System
 Security, and Cryptography. Both of these courses would be offered to CS
 and CE students.
 
@@ -888,7 +892,7 @@ Not only that, but version control offers incalculable benefits to
         \emph{possible}; After using \texttt{git} for team projects, it is
         extremely difficult to imagine doing so without it.
 \item   The popular \texttt{git} repository hosting website, \texttt{GitHub}
-        \href{www.github.com}{(www.github.com)} is now viewed by many
+        \href{https://www.github.com}{(www.github.com)} is now viewed by many
         companies not as a \emph{suppliment} to a traditional resume, but
         rather as a nearly-obligatory resource through which they can view a
         candidate's work and really see if they produce quality code.
@@ -937,8 +941,8 @@ folder of the student's project that they can download and submit. For
 group projects, professors can even see detailed statistics and graphs
 of who is contributing what to any given project, if they so choose to
 do so. To avoid plagiarism between students in classes, projects could
-be hosted on other sites such as Gitlab (www.gitlab.com) or Bitbucket
-(www.bitbucket.org), both of which offer free private repositories.
+be hosted on other sites such as Gitlab (\href{https://www.gitlab.com}{www.gitlab.com}) or Bitbucket
+(\href{https://www.bitbucket.org}{www.bitbucket.org}), both of which offer free private repositories.
 
 \bigskip
 
@@ -962,7 +966,101 @@ easy to learn, has a mountain of great documentation behind it, and is
 exclusively used by the most popular public repository site, GitHub.
 \end{quote}
 
-% Proposal section
+% Curriculum section
+\section{Curriculum Suggestions}\label{curriculum-suggestions}
+While I am aware that changes to a curriculum are not so easily implemented that the school can simply add or remove courses at will, the curriculum suggestions below are my view of what I believe to be a generally improved curriculum for Computer Engineering students. These suggestions stem from my experience with the existing curriculum, the needs of co-op employers, and the insight young engineering students have in new topics and fields, having grown up in the era of massive technological changes in the field of computer engineering.
+
+\bigskip
+
+Again, this is essentially just a very \textbf{idealistic} view of what a curriculum might look like, so it could be referenced if changes were to be made.
+
+\bigskip
+
+Note that the only courses included are those discussed in this proposal, and not any gen-ed courses or other pre-requisite engineering courses.
+
+\subsection{Freshman Year}\label{freshman-year}
+\textbf{Foundational Courses}
+
+\subsection{Sophomore Year}\label{sophomore-year}
+\paragraph{Fall}\label{sophomore-fall}
+\begin{enumerate}
+    \item   Circuit Analysis I
+\end{enumerate}
+\paragraph{Winter}\label{sophomore-winter}
+\begin{enumerate}
+    \item   Introduction to C Programming
+\end{enumerate}
+
+\subsection{Junior Year}\label{junior-year}
+\paragraph{Fall}\label{junior-fall}
+\begin{enumerate}
+    \item   System Programming
+    \item   Introduction to Digital Systems
+\end{enumerate}
+\paragraph{Winter}\label{junior-winter}
+\begin{enumerate}
+    \item   Introduction to C++ Programming
+    \item   Data Structures and Algorithms
+    \item   CE Elective
+\end{enumerate}
+\paragraph{Summer}\label{junior-summer}
+\textbf{Co-op}
+
+\subsection{Senior Year 1}\label{senior-year-1}
+\paragraph{Fall}\label{senior-fall-1}
+\begin{enumerate}
+    \item   Circuit Analysis II
+    \item   Electrical Circuits I
+    \item   Advanced Digital Systems
+\end{enumerate}
+\paragraph{Winter}\label{senior-winter-1}
+\textbf{Co-op}
+\paragraph{Summer}\label{senior-summer-1}
+\begin{enumerate}
+    \item   Software Engineering
+    \item   Design of Microcontroller Applications
+    \item   CE Elective
+\end{enumerate}
+
+\subsection{Senior Year 2}\label{senior-year-2}
+\paragraph{Fall}\label{senior-fall-2}
+\textbf{Co-op}
+\paragraph{Winter}\label{senior-winter-2}
+\begin{enumerate}
+    \item   Operating Systems Concepts
+    \item   Data Communications
+    \item   CE Elective
+    \item   Senior Project I
+\end{enumerate}
+\paragraph{Summer}\label{senior-summer-2}
+\begin{enumerate}
+    \item   Senior Project II
+\end{enumerate}
+
+\subsection{Electives}\label{suggested-electives}
+\begin{enumerate}
+    \item   EGR 426 - Integrated Circuit System Design
+    \item   CIS 458 - System Security
+    \item   EGR 436 - Embedded Systems Interface
+    \item   CIS 375 - Wireless Networking Systems
+    \item   CIS 461 - Compiler Design and Construction
+    \item   CIS 451 - Computer Architecture (Although this is really covered quite well between EGR 226, EGR 424, and CIS 452)
+\end{enumerate}
+
+\section{Thank You and Request for Feedback}\label{request-for-feedback}
+Thank you very much for reading this document. By considering the feedback from former students, the engineering program will offer even more to its future students, and a reputation for considering feedback goes a long way.
+
+\bigskip
+
+I would very much appreciate \textbf{your} feedback on this document. Just as feedback from students regarding courses can be useful, feedback from faculty regarding student ideas is essential.
+
+\bigskip
+
+\textbf{Please send feedback regarding this document to: Joe Gibson  \href{mailto:gibsjose@mail.gvsu.edu}{(gibsjose@mail.gvsu.edu)}.}
+
+\bigskip
+
+You can also view the source code for this document (written in LaTeX) on my GitHub page at \href{https://www.github.com/gibsjose/CE-Proposal}{www.github.com/gibsjose/CE-Proposal}.
 
 \end{document}
 
