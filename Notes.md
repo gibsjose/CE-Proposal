@@ -17,6 +17,8 @@ And move it to the `Completed` section.
 ##Notes
 * Administrative rules regarding the way professors release content: Using PDFs rather than Word Documents, across the board
 * Briefly mention Markdown as a tool for GitHub READMEs
+* Link to Professor who recommends GitHub/Git for students: [http://blog.humphd.org/vocamus-1358/?p=1358](http://blog.humphd.org/vocamus-1358/?p=1358)
+* Teach OOP design patterns (singleton, etc.) in OOP course
 
 ##Completed
 * ~~Development boards are useful as showcases for students during interviews~~
