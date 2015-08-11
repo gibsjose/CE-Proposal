@@ -181,6 +181,12 @@ support in one way or another.
 
 \bigskip
 
+It also may be true that - as someone not involved in the social, political,
+and financial institutions of the university - I may not be privy to certain
+information or future plans, and what I suggest could be in the works or something that was discussed previously without my knowledge. Thus, suggestions on program additions/changes should be read as \emph{``Here is something that I believe could be improved upon.''}, rather than \emph{``This is what you should do, how you should do it, and when.''} I understand that there are vast political and financial complexities involved in departmental changes and course/curriculum modifications.
+
+\bigskip
+
 That being said, this document is really intended to give my perspective
 as a former student in the program. I believe the engineering department
 values the opinions of both former and current students, who have a
@@ -188,6 +194,10 @@ unique perspective on the content and impact of the courses in the
 current curriculum. This particular perspective puts us in a spot to
 give relevant and significant feedback on the program and the ways in
 which it could be improved.
+
+\bigskip
+
+I have put a \textbf{significant} amount of personal time and thought into this document. I did this because I care about the program, and I believe that my feedback can help improve the curriculum. Please keep this in mind when reading this document.
 
 \newpage
 \section{Existing curriculum}\label{existing-curriculum}
@@ -236,10 +246,10 @@ majority of the courses are well suited and in the proper order.
 
 \bigskip
 
-For example, the progression from \textbf{EGR 214} to \textbf{EGR 314}
-and \textbf{EGR 315} is logical and smooth, and the latter half of the
-CE curriculum, including \textbf{CIS 452}, \textbf{CIS 457}, and
-\textbf{EGR 424} is both challenging and incredibly insightful.
+For example, the progression from EGR 214 to EGR 314
+and EGR 315 is logical and smooth, and the latter half of the
+CE curriculum, including CIS 452, CIS 457, and
+EGR 424 is both challenging and incredibly insightful.
 
 \subsection{Preparation and Practicality}\label{preparation-and-practicality}
 In the end, the major benefit of Grand Valley's engineering program is
@@ -308,14 +318,18 @@ reflect that.
 \bigskip
 
 This is not to say that any \emph{major} program revisions are
-necessary, as clearly CEs should be taking the majority of their courses
-in the CS and EE disciplines, but rather that certain courses and course
-content which have been historically used at GVSU as part of the CE
-curriculum are not well suited for CE students, and perhaps specific CE
-courses should be created which are similar in the end goal of an existing course
-(such as teaching object oriented programming), but differ in their
-approach (such as doing so in C++ rather than Java), as will be
-described below.
+necessary, as CEs should be taking the majority of their courses
+in the CS and EE disciplines due to the nature of the degree, but rather that certain courses and course content which have been historically used at GVSU as part of the CE curriculum are not well suited for CE students, and perhaps specific CE courses should be created which are similar in the end goal of an existing course (such as teaching object oriented programming), but differ in their approach (such as doing so in C++ rather than Java), as will be described below.
+
+\bigskip
+
+\begin{quote}
+\textbf{An aside:} I realize that GVSU is a publicly funded University, and in today's economy a department cannot simply hire new faculty at will to create new courses, but I would behoove the department to consider that software and embedded systems engineering (that is, Computer Engineering) is a field that is growing in an extraordinary manner, and thus you can anticipate that the number of students entering the program will only increase. I have absolutely no doubt that within a few years the number of Computer Engineering majors will equal or outnumber the Electrical Engineering majors.
+
+\bigskip
+
+Look back to the early 2000s; if a department or student had suggested that the university start investing more in teaching web frameworks, mobile applications, machine learning, or big data, and that they should create specific courses for those topics, the university would probably have scoffed at them. Yet, here we are in 2015, where those topics are \textbf{highly} desireable. What should we anticipate will happen with drone technology, wearable electronics, and the ``internet-of-things''? All of these fields use embedded electronics and signal processing. They all require \textbf{Computer Engineering}, not just Computer Science. Should we really fool ourselves into believing that the 32-bit microcontroller for the drone flight controller or the sensor chip on a smart watch will be coded in \emph{Java}? I don't think so.
+\end{quote}
 
 \subsection{Java I and II}\label{java}
 Object Oriented Programming is without a doubt a fundamental aspect of
@@ -341,7 +355,7 @@ co-op.
 
 \bigskip
 
-Given the time spent learning OOP, it occurs that instead of teaching
+Given the time spent learning OOP, it occurs to me that instead of teaching
 this concept in a language seldom used thereafter by CEs, a much more
 logical approach would be to teach OOP using C++.
 
@@ -362,7 +376,7 @@ and other important aspects which are `hidden' by Java, C++ actually
         where access to data structures such as maps, trees, sets, and even
         simply class-based organization itself are less of a luxury and more
         of a necessity.
-\item   Even on a microcontroller, C++ can be useful. For example, I completed
+\item   Even on a microcontroller, C++ is useful. For example, I completed
         my EGR 326 project using C++ rather than C on an ATmega328P, and found
         this experience to be both technically rewarding as well as a more
         efficient use of my coding time.
@@ -414,6 +428,12 @@ These similarities also mean that there could even be \emph{one} OOP course in C
 
 \bigskip
 
+\begin{quote}
+\textbf{Edit:} I understand that a new 1-credit course, CIS 159: \emph{Intro to Java for C Programmers}, will be introduced as a replacement for CIS 162. I think this is a great step in the right direction, as I think everyone would agree that CIS 162 was unnecessary. However, the end goal for the CE department should be geting rid of both CIS 159 \emph{and} CIS 163 for their students, and instead teach C and C++ sequentially.
+\end{quote}
+
+\bigskip
+
 C++ is also more widely used than Java in the field of computer
 \textbf{engineering}. I will not attempt an argument at programming
 language popularity in general (see statistics at
@@ -425,12 +445,11 @@ all three of my co-ops I used C once on a piece of avionics software,
 and C++ on both of the other two: once on a sub-orbital balloon
 satellite at NASA and again on a large particle physics project at CERN.
 At both NASA and CERN, C++ was by far the most prevalent language used
-by the engineers outside of web developers.
+by the engineers.
 
 \bigskip
 
-In the end, all of these attributes make C++ a more logical progression for the
-foundational OOP Computer Engineering course(s) than using Java.
+In the end, all of these attributes make C++ a more logical progression for the foundational OOP Computer Engineering course(s) than using Java.
 
 \subsection{System Programming}\label{system-programming}
 CIS 361 is split into two distinct halves:
@@ -442,7 +461,7 @@ CIS 361 is split into two distinct halves:
 \end{enumerate}
 
 Both of these topics are extremely important and must be part of the CE
-curriculum.
+curriculum. The CE Committee did a great job of replacing EGR 209 (Statics) with CIS 361, and I commend them for that.
 
 \bigskip
 
@@ -450,7 +469,7 @@ However, the problem lies in the way the first half is typically
 instructed (at no fault to the instructor); since CIS 361 is offered as
 an elective for CS students (it is required for CEs), the first half of
 the course inevitably begins as a \textbf{``Java to C''} course, rather
-than a course on system programming.
+than a course on system programming. In reality, the course \emph{should} be offered to both majors, but changes need to be made.
 
 \bigskip
 
@@ -465,9 +484,12 @@ topics. Clearly there exists a better solution.
 
 \bigskip
 
+Perhaps the answer is to stop giving an introduction to basic C syntax to CIS students, and allow them to learn on their own through experimentation during the first few weeks of the course. This would not be dissimilar to what both CIS and CE students must do when they encounter CIS 263, which is often instructed in C++ with no primer to the language. Then again, perhaps we should just drop the basic C syntax lessons and assume CIS students will figure out the peculiarities, but still give a review of pointers. In the end, the course is on system programming, not C syntax, and halfway through the semester we drop all C programming completely and switch to shell scripting.
+
+\bigskip
+
 To be sure, the latter half of the course is both useful and engaging
-for both CS and CE students, but more on scripting will be discussed in
-the next section, \textbf{Extracurricular Topics}.
+for both CS and CE students, but more on scripting will be discussed later in the document in Section \ref{extracurricular}.
 
 \subsection{Hardware Design Skills, or, ``Arduino Dependence''}\label{arduino-dependence}
 EGR 214, 226, 314, 315, and 316 offer a broad range of both analog and
@@ -477,7 +499,7 @@ suggested improvement to the existing courses.
 
 \bigskip
 
-Out of the 30+ EE and CE students (a number which increases annualy), by
+Out of the 30+ EE and CE students (a number which increases annually), by
 the senior year, few if any have real, practical PCB design skills. To
 be sure, PCB design topics are \emph{discussed} in EGR 326, and some
 courses even require designing small boards or `shields', but the
@@ -494,6 +516,10 @@ components and non-breadboardable chips. These types of packages are not
 only the most common in any real circuit design, but surface mount
 soldering techniques, including the use of solder paste, are a basic
 element of being an electrical or computer engineer.
+
+\bigskip
+
+While we are not totally missing the boat on this, since it has been pointed out that many programs also do not offer much in the way of PCB design, I see no reason to follow in the footsteps of other schools that are lacking in content. GVSU should be proud of how it prepares students for the workforce, and PCB design is an important part of this. Sure, few if any students will graduate with full-time jobs as dedicated PCB designers, but that is missing the point: PCB design gives students more appreciation for where their boards come from and how they work on an intimate level. Debugging an Arduino is much easier if you designed it and printed it yourself. And when our engineering graduates \emph{do} get their first job, they will appreciate the guys in the PCB design team that much more. Moreover, it is just not that difficult. Designing your own Arduino is really quite trivial, given that the ATmega328P microcontroller has nearly everything contained inside.
 
 \bigskip
 
@@ -567,14 +593,14 @@ development board, in which they re-design the regulator (maybe use two
 LM317s in parallel with ballast resistors or something), implement
 safety features like using zener diodes and resettable fuses on digital
 pins, and learn the importance of flyback diodes and other useful
-components.
+components. I believe that this step in the development process, of adding in safety and reliability features to their own development board, is the most important of all, and really should be considered for future courses.
 
 \bigskip
 
-Additionally, EGR 326 does scratch the surface of \emph{theoretical}
-board layout, spotlighting the importance of, for example, putting your
-filtering caps as close as you can to certain pins, or ensuring matched
-impedence on high-speed transmission lines. This could all be
+EGR 326 does scratch the surface of \emph{theoretical} board layout,
+spotlighting the importance of, for example, putting your filtering caps
+as close as you can to certain pins, or ensuring matched
+impedence on high-speed transmission lines. This should all be
 practically expressed during the design of the \textbf{rev 2} board,
 wherein students apply these techniques to build a much more robust
 development board; think `Ruggeduino'. This would be the main project
@@ -582,7 +608,7 @@ throughout EGR 326, culminating in the manufacturing of their board,
 which could be used in a very \textbf{simple} project at the end of the
 semester. As it were, the EGR 326 project we completed was heavily
 comprised of topics that were not the main focus of EGR 326, such as
-infrared diodes and mechanical design including very heavy reliance on
+infrared diodes and mechanical design including heavy reliance on
 3D printing. Although these things are important, the design of a robust
 development board aligns more closely with the content of EGR 326, and
 in the end is something that students can be proud of and keep using on
@@ -604,7 +630,7 @@ design and find that they quite enjoy it.
 
 \textbf{Even more paramount is the ability for students to showcase
 their board during interviews.} They will have at least one board
-(possibly a second revision) to physically hand prospective employers,
+(and possibly a second revision) to physically hand to prospective employers,
 while they explain the steps they took to design and enhance the board,
 and could even show the documentation they have prepared surrounding the
 board, such as schematics and calculations. This gives students an
@@ -720,6 +746,12 @@ There are also some EE electives, namely the new \textbf{Embedded
 Systems Interface} course by Dr.~Bossemeyer and Dr.~Jiao that would be
 of great value to CEs as well as EEs.
 
+\bigskip
+
+\begin{quote}
+\textbf{Edit:} I have been informed that the Embedded I/F course is already an approved CE elective. Great work!
+\end{quote}
+
 \subsection{Software Engineering}\label{software-engineering}
 CIS 350 is intended to be a course in software engineering, which
 demonstrates the lifecycle of software projects and different project
@@ -755,6 +787,10 @@ this, real examples of UML charts, state machine diagrams, etc. would be
 created by the professor and students in concert along the way, and the
 instructor could address the different ways of surmounting a large
 software project with real, physical examples.
+
+\bigskip
+
+Finally, CIS 350 could even have room for an introduction to version control systems, a topic that I \textbf{really} think we are missing out on at GVSU. I will discuss much more about version control next, in Section \ref{git}.
 
 \newpage
 \section{Extracurricular Topics}\label{extracurricular}
@@ -814,11 +850,16 @@ I know many students are very interested in the field, as it is one of
 the more provocative areas of computer science. There is no doubt that
 CIS 458 fills up quickly whenever it is offered by Dr.~Kalafut.
 
+\bigskip
+
+\begin{quote}
+\textbf{Edit:} It was brought to my attention that there was previously a proposal for students to emphasize in either security or databases, and I believe this is a great idea.
+\end{quote}
+
 \subsection{Connected Devices}\label{connected-devices}
 \begin{quote}
-\textbf{Side note}: EGR 436 - Embedded Systems Interface already
-exists and covers many of these points, but it is not available for CEs
-to take as an elective as of writing this document.
+\textbf{Edit}: EGR 436 - Embedded Systems Interface already
+exists and covers many of these points, and I was not aware that it is now offered as a CE elective.
 \end{quote}
 
 The so-called `Internet-of-Things' is also an emerging field, and one
@@ -1048,11 +1089,15 @@ Note that the only courses included are those discussed in this proposal, and no
 \end{enumerate}
 
 \section{Thank You and Request for Feedback}\label{request-for-feedback}
-Thank you very much for reading this document. By considering the feedback from former students, the engineering program will offer even more to its future students, and a reputation for considering feedback goes a long way.
+Thank you very much for reading this document. By considering the feedback from former students, the engineering program will offer even more to its future students, and a reputation for \emph{actually} considering feedback goes a long way.
 
 \bigskip
 
-I would very much appreciate \textbf{your} feedback on this document. Just as feedback from students regarding courses can be useful, feedback from faculty regarding student ideas is essential.
+Also thank you to the CE department and CE committee. The changes you have made thus far have brought the CE department a very long way, and I believe some of the points I have mentioned are already being discussed. However, there is still room for improvement.
+
+\bigskip
+
+I have put a considerable amount of time into this document, and would very much appreciate \textbf{your} feedback. Just as feedback from students regarding courses can be useful, feedback from faculty regarding student ideas is essential.
 
 \bigskip
 
