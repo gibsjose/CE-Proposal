@@ -1,0 +1,214 @@
+\documentclass[12pt]{article}
+
+% Commands
+\newcommand{\ASSNMT}{GVSU Computer Engineering Program}
+\newcommand{\CLASS}{Review, Critique, and Proposal}
+\newcommand{\Footer}{Grand Valley State University}
+
+\newcommand{\DATE}{July 2015}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{pdflscape}
+\usepackage{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage[justification=centering]{caption}
+\usepackage{amssymb}
+\usepackage[pdftex, colorlinks=true, urlcolor=blue, linkcolor=black, pdfborderstyle={/S/U/W 0}]{hyperref} % this disables the boxes around links]
+\usepackage{float}
+\usepackage{listings}
+% \usepackage{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\numberwithin{figure}{section}
+\usepackage{amsmath}
+
+\numberwithin{equation}{section}
+% lstlisting
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset
+{
+  frame=single,
+  frameround=tttt,
+  language=C,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  tabsize=3,
+  breaklines=true,
+  basicstyle={\small\ttfamily},
+  xleftmargin=\fboxsep,
+  xrightmargin=-\fboxsep,
+  numbers = left,
+  stepnumber = 5,
+  firstnumber = 1
+}
+
+% macro for appendix to be printed as "Appendix A {name of appendix}"
+% instead of "A {name of appendix}"
+% From: http://tex.stackexchange.com/questions/160839/having-appendix-a-instead-of-a-appendix
+\makeatletter
+%% The "\@seccntformat" command is an auxiliary command
+%% (see pp. 26f. of 'The LaTeX Companion,' 2nd. ed.)
+\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
+   {\csname the#1\endcsname\quad}  % default
+   {\csname #1@cntformat\endcsname}% enable individual control
+}
+\let\oldappendix\appendix %% save current definition of \appendix
+\renewcommand\appendix{%
+    \oldappendix
+    \newcommand{\section@cntformat}{\appendixname~\thesection\quad}
+}
+\makeatother
+% Sign and Date command
+\newcommand{\namesigdate}[2][5cm]{%
+  \begin{tabular}{@{}p{#1}@{}}
+    #2 \\[2\normalbaselineskip] \hrule \\[0pt]
+    {\small \textit{Signature}} \\[2\normalbaselineskip] \hrule \\[0pt]
+    {\small \textit{Date}}
+  \end{tabular}
+}
+
+
+\begin{document}
+% =====----- Initial Set Up -----=====
+% Title Page
+\newgeometry{top=2cm,left=1cm,bottom=1cm,right=1cm}
+\begin{flushleft}
+\pagenumbering{gobble}
+
+\textsc{\LARGE \bfseries \ASSNMT}\\
+
+\textsc{\Large \CLASS}\\[0.2cm]
+\linethickness{0.5mm}
+{\color{NavyBlue}\line(1,0){350}} \\ [1.0cm]
+
+\begin{flushleft} \large
+\begin{tabular}{lll}
+Written By: & Joe Gibson    & \href{mailto:gibsjose@mail.gvsu.edu}{gibsjose@mail.gvsu.edu}\\
+              &               & \\
+Comments and Review By: & Jesse Millwood  &       \href{mailto:millwooj@mail.gvsu.edu}{millwooj@mail.gvsu.edu}\\
+        & Kurt VonEhr     & \href{mailto:vonehrk@mail.gvsu.edu}{vonehrk@mail.gvsu.edu}\\
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+% If you don't also put this in a 'tabular' layout, then it fully left-aligns the date text, which makes  it like 0.5cm too far to the left... which really bugs me for some reason
+\begin{tabular}{lll}
+Date: \DATE
+\end{tabular}
+\end{flushleft}
+
+\smallskip
+{\color{NavyBlue}\line(1,0){350}} \\ [1.0cm]
+\section*{Executive Summary} \label{sect:execsum}
+This document attempts a review and critique of the Computer Engineering program at Grand Valley State University in the form of a proposal. Both the strengths and weaknesses of the program will be discussed, and additional topics will be proposed.
+
+\bigskip
+
+The goal of this document is to provide feedback from a former student who believes that the program is in a position to greatly enhance an already favorable curriculum. By reviewing this document and taking its contents to heart, the university will be demonstrating its commitment to student feedback and its ability to adapt to changing educational and industrial landscapes.
+
+\bigskip
+
+The following items are the main points of the proposal:
+
+\begin{enumerate}
+    \item C++ should be taught to CE students following their introduction to C, rather than teaching them Java, which is never actually used after CIS 163.
+    \item Students should design their own ATmega-based development board instead of relying only on the Arduino. They should incorporate circuit protection aspects of the \textit{Ruggeduino}, which they learn about in EGR 326.
+    \item Students should be taught version control systems (such as \texttt{git}) to manage code, group projects, and project submissions.
+    \item EGR 424 (Design of Microcontroller Applications) and CIS 457 (Data Communications) are both fundamental to Computer Engineering, and should be required courses, rather than electives.
+\end{enumerate}
+
+\vfill
+
+% Bottom of the page
+\begin{center}
+{\large \Footer}
+\end{center}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.1\textwidth]{small_gvsu}
+\end{figure}
+\end{flushleft}
+\restoregeometry
+\newpage
+% Define Page Geometry for rest of report
+{\newgeometry{left=0.8in, right=0.8in, top=1in, bottom=1in}
+% Page Numbers
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\ASSNMT}
+\rhead{\leftmark}
+\rfoot{Page \thepage}
+% No paragraph indents
+\setlength{\parindent}{0cm}
+\end{document}
+
+% ======== For Reference =============
+% H parameter for the figure environment
+% keeps it from floating
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{FIG2_1b}
+	\caption{Convolution of Identical Unit Step Sequences}
+	\label{fig:21b}
+\end{figure}
+% To turn off caption numbering place this:
+%\captionsetup[figure]{labelformat=empty}
+% Before the figure, To turn back on:
+%captionsetup[figure]{labelformat=default}
+\begin{equation}
+	\begin{array}{rcl}
+
+	y[n] &=& 0.5x[n]+x[n-1]+2x[n-2]\\
+	y[n] &=& 0.8y[n-1]+2x[n]\\
+	y[n]-0.8y[n-1] &=& 2x[n-1]
+	\end{array}
+\end{equation}
+
+\begin{subequations}
+	\begin{align}
+		h[n] &= 2\delta[n+1]-2\delta[n-1]\\
+		x[n] &= \delta[n] + \delta[n-2]
+	\end{align}
+\end{subequations}
+
+% Resize used to make table width of text, may be omitted
+\begin{table}[h]
+\resizebox{\textwidth}{!}{
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Case & $Z_c$          & $l$           & $c$       \\ \hline
+1    & $110.9 \Omega$ & 0.593 $\mu H$ & 0.048 nF  \\ \hline
+2    & $171.3 \Omega$ & 0.803 $\mu H$  & 27.408 pF \\ \hline
+3    & $327.3 \Omega$ & 1.102 $\mu H$  & 10.294 pF \\ \hline
+\end{tabular}}
+\caption{Calculated Parameters}
+\label{tbl:calcd}
+\end{table}
+
+% Code Snippet:
+\begin{lstlisting}[language=C,label=lala,caption=this thing]
+  code snippet
+\end{lstlisting}
+
+% bulleted list
+\begin{itemize}
+\item this is an item
+\end{itemize}
+
+\renewcommand*\contentsname{ }
+\tableofcontents
+\listoffigures
